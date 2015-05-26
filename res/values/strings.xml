@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">코레일 열차지연정보</string>
+    
+    <string name="titleTrainType">열차종류</string>
+    <string name="titleDepDate">출발날짜</string>
+    <string name="titleDepTime">출발시각</string>
+    <string name="titleDepInfo">승차역</string>
+    <string name="titleArrInfo">하차역</string>
+    <string name="titleSearchButton">조회</string>
+    
+    <string name="titleNowInfo">열차정보</string>
+    <string name="titleStartInfo">승차</string>
+    <string name="titleEndInfo">하차</string>
+    <string name="titleStatus">열차상태</string>
+    <string name="titleDelayInfo">지연</string>
+    
+
+</resources>
