@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="237dp"
+            android:layout_height="39dp"
+            android:layout_weight="0.69"
+            android:background="@drawable/border"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="@string/queryHint"
+            android:imeOptions="actionSearch"
+            android:maxLength="20"
+            android:paddingLeft="5dp"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search_magnifier" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/itemListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/border"
+        android:divider="#33000000"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:dividerPadding="@dimen/activity_horizontal_margin"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/interestTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+        
+        <View
+		    android:layout_gravity="center"
+		    android:gravity="center"
+	    	android:layout_height="60dp"
+	    	android:layout_width="30dp"       
+		    android:layout_weight="0.5" />
+
+	    <TextView
+	        style="@style/trainItemBLACK"
+	        android:layout_weight="1.2"
+	        android:text="@string/titleTrainType" />
+
+	    <TextView
+	        style="@style/trainItemBLACK"
+	        android:layout_weight="1"
+	        android:text="@string/titleDepInfo" />
+	    <TextView
+	        style="@style/trainItemBLACK"
+	        android:layout_weight="1"
+	        android:text="@string/titleArrInfo" />
+	    
+	    <TextView
+		    style="@style/trainItemBLACK"
+		    android:layout_weight="0.3"
+		    android:textSize="30sp"
+		    android:paddingRight="3dp"
+		    android:text=" " />
+
+	</LinearLayout>
+	
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C9C9C9"/>
+    
+    <ListView
+		    android:id="@+id/interestTrainListView"
+		    android:layout_width="match_parent"
+	        android:layout_height="0dp"
+        	android:layout_weight="10"
+        	android:background="#FFFFFF"
+	        android:persistentDrawingCache="animation|scrolling"
+			android:layoutAnimation="@anim/anim_layout_controller" />
+<!-- 
+    <com.praisehim.koraildelay.SwipeLibrary.SwipeRefreshLayout
+
+	    android:id="@+id/interestRefresher"
+	    android:background="#FFFFFF"
+	    android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+	    
+        
+
+	</com.praisehim.koraildelay.SwipeLibrary.SwipeRefreshLayout>
+ -->
+    
+</LinearLayout>

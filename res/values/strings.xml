@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">기차탈수있을까?</string>
+    <string name="action_settings">설정</string>
+    <string name="hello_world">안녕!</string>
+    <string name="titleTrainType">열차종류</string>
+    <string name="titleDepInfo">승차역</string>
+    <string name="titleArrInfo">하차역</string>
+    <string name="titleDelayInfo">지연시간</string>
+    <string name="titleStartInfo">승차정보</string>
+    <string name="titleNowInfo">열차정보</string>
+    <string name="titleEndInfo">하차정보</string>
+    <string name="titleDepDate">출발날짜</string>
+    <string name="titleDepTime">출발시각</string>
+    <string name="titleSearchButton">조회</string>
+    <string name="trainRegistAlert">해당열차가\n등록되었습니다</string>
+    <string name="trainRegistCancelAlert">등록이\n해제되었습니다</string>
+    <string name="cancel">실행취소</string>
+    <string name="queryHint">검색어를 입력하세요</string>
+    <string name="prompt">검색할 항목을 설정하세요</string>
+
+
+</resources>

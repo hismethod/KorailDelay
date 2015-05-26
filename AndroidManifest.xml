@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.praisehim.koraildelay"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="18" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@drawable/thomas"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.praisehim.koraildelay.MainActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".StationSearchActivity" />
+    </application>
+
+</manifest>

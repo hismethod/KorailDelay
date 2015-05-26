@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/infoTopHeader"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+	    android:layout_height="110dp"
+	    android:orientation="horizontal"
+	    android:layout_gravity="center">
+        
+        <ImageView
+          android:id="@+id/trainIcon"
+          android:layout_gravity="center"
+          android:layout_width="70dp"
+          android:layout_height="70dp"
+          android:layout_marginLeft="10dp" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp" >
+        
+          <TextView
+              android:id="@+id/trainName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:padding="5dp"
+              android:textColor="#000000"
+              android:textSize="22sp" />
+  
+        <TextView
+            android:id="@+id/trainNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+      </LinearLayout>
+      
+     
+      
+        <LinearLayout
+            android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp" >
+      
+        <TextView
+            android:id="@+id/delayLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/titleDelayInfo"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+        
+        <TextView
+            android:id="@+id/delayTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+      </LinearLayout>
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:background="#13BDFF"/>
+    
+    <LinearLayout
+        android:id="@+id/infoMidHeader"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="7dp" >
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp" >
+            
+            <TextView
+                android:id="@+id/startStn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingTop="5dp"
+                android:textColor="#000000"
+                android:textSize="26sp" />
+            
+            <TextView
+                android:id="@+id/estimateStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="26sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/stationArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:text=">>" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp" >
+            
+            <TextView
+                android:id="@+id/endStn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingTop="5dp"
+                android:textColor="#000000"
+                android:textSize="26sp" />
+            
+            <TextView
+                android:id="@+id/estimateEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="26sp" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp" >
+            
+            <TextView
+                android:id="@+id/nowInfoLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingTop="5dp"
+                android:text="@string/titleNowInfo"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            
+            <TextView
+                android:id="@+id/nowStn"
+                android:layout_width="wrap_content"
+                android:minWidth="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingTop="3dp"
+                android:text="조회중..."
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:background="#13BDFF"/>
+    
+    <LinearLayout
+        android:id="@+id/infoTailHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+        
+        <TextView
+            android:id="@+id/remainTimeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:background="#13BDFF"/>
+    
+    <LinearLayout
+        android:id="@+id/ticketHeader"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"  >
+        
+        <LinearLayout
+            android:id="@+id/normalTicketLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="일반석" />
+            
+            <TextView
+                android:id="@+id/normalSeatView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:gravity="center"
+                android:textSize="22sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/freeTicketLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="자유석(입석)" />
+            
+            <TextView
+                android:id="@+id/freeSeatView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:gravity="center"
+                android:textSize="22sp" />          
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/goKorailTalkLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="코레일톡\n바로가기" />
+            
+            <ImageView
+                android:id="@+id/korailIconView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/korailtalkicon"
+                android:scaleType="fitXY" />
+            
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

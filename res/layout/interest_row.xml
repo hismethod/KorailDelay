@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/interestRow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_click"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <ImageView
+	    android:layout_gravity="center"
+	    android:gravity="center"
+    	android:layout_height="60dp"
+    	android:layout_width="30dp"
+	    android:id="@+id/interestItemIcon"	        
+	    android:layout_weight="0.5"
+	    android:scaleType="fitCenter" />
+   	<TextView
+	    style="@style/trainItemORANGEsmall"
+	    android:id="@+id/interestItemTrainType"
+	    android:layout_weight="1.2" />
+	<TextView
+	    style="@style/trainItemBLACK"
+	    android:id="@+id/interestItemDepInfo"	        
+	    android:layout_weight="1" />
+	<TextView
+	    style="@style/trainItemBLACK"
+	    android:id="@+id/interestItemArrInfo"	        
+	    android:layout_weight="1" />
+	
+	<TextView
+	    style="@style/trainItemBLACK"
+	    android:id="@+id/userDelView"
+	    android:layout_weight="0.3"
+	    android:textSize="30sp"
+	    android:paddingRight="3dp"
+	    android:text="x" />
+
+</LinearLayout> 
